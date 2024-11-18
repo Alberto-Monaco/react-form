@@ -16,6 +16,7 @@ function App() {
 		const newTitles = titles.filter((title, index) => index !== titleIndexToDelete)
 		setTitles(newTitles)
 	}
+	function changeTitle(e) {}
 
 	return (
 		<>
@@ -49,9 +50,14 @@ function App() {
 					{titles.map((title, index) => (
 						<li key={index} className='list-group-item d-flex justify-content-between align-items-center'>
 							{title}
-							<button className='btn btn-danger' data-index={index} onClick={deleteTitle}>
-								🗑️
-							</button>
+							<div className='d-flex'>
+								<button className='btn btn-warning me-2' data-index={index} onClick={changeTitle}>
+									✏️
+								</button>
+								<button className='btn btn-danger' data-index={index} onClick={deleteTitle}>
+									🗑️
+								</button>
+							</div>
 						</li>
 					))}
 				</ul>
