@@ -16,7 +16,10 @@ function App() {
 		const newTitles = titles.filter((title, index) => index !== titleIndexToDelete)
 		setTitles(newTitles)
 	}
-	function changeTitle(e) {}
+	function changeTitle(e) {
+		const titleIndexToChange = Number(e.target.getAttribute('data-index'))
+		const newTitle = prompt('Enter new title')
+	}
 
 	return (
 		<>
