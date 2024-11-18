@@ -18,7 +18,9 @@ function App() {
 	}
 	function changeTitle(e) {
 		const titleIndexToChange = Number(e.target.getAttribute('data-index'))
-		const newTitle = prompt('Enter new title')
+		const changedTitle = prompt('Enter new title')
+		const newTitles = titles.map((title, index) => (index == titleIndexToChange ? changedTitle : title))
+		setTitles(newTitles)
 	}
 
 	return (
