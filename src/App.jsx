@@ -35,7 +35,7 @@ function App() {
 								value={newTitle}
 								onChange={(e) => setNewTitle(e.target.value)}
 							/>
-							<button className='btn btn-outline-secondary' type='submit' id='button-addon2'>
+							<button className='btn btn-primary' type='submit' id='button-addon2'>
 								Add
 							</button>
 						</div>
