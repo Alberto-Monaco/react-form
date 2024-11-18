@@ -19,7 +19,7 @@ function App() {
 
 	return (
 		<>
-			<div className='container'>
+			<div className='container w-50 my-3'>
 				<h1>React form</h1>
 
 				<form onSubmit={addTitle}>
@@ -39,7 +39,7 @@ function App() {
 								Add
 							</button>
 						</div>
-						<small id='titleHelperId' className='form-text text-muted'>
+						<small id='titleHelper' className='form-text text-muted'>
 							Type your new title
 						</small>
 					</div>
