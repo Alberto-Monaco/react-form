@@ -40,7 +40,7 @@ function App() {
 							</button>
 						</div>
 						<small id='titleHelper' className='form-text text-muted'>
-							Type your new title
+							Title of the article
 						</small>
 					</div>
 				</form>
